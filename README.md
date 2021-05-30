@@ -12,7 +12,7 @@ NOTE: **TBD - To Be Done**
 **Deployed Web Application (Link) :**
 [https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/](https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/)
 
-![Poster](https://drive.google.com/uc?export=view&id=1I2kXGbvJfr0J_LvG9AScWOpxNFkDhe_1)
+![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/posterV3.png)
 
 **Motivation**
 
@@ -53,8 +53,8 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 **Overview of Architecture**
 
-![Architecture](https://drive.google.com/uc?export=view&id=1_NoKSO1S29LIUOWnQS-goJNYKEP2lVEu)
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
 
 **Sample Flow of Application**
 
-![Program Flow](https://drive.google.com/uc?export=view&id=1rJ6Jg9TOatDcinmZ-hBzr9beooeQpuqk)
+![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
