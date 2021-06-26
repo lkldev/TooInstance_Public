@@ -72,9 +72,9 @@ A Web Application hosted on AWS services that automates the creation of the dock
 ### 4.2 Features
 #### 4.2.1 Features implemented in Milestone 1
 1. Login/Register
-  - Register User
-  - Login as User
-  - Logout of User Account
+    - Register User
+    - Login as User
+    - Logout of User Account
 2. Sample logged on Dashboard page with list of test data
 3. UI and UX changes for the web pages
 
