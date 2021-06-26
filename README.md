@@ -80,16 +80,16 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 #### 4.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
-  - Upload to DynamoDB Table, the following Parameters:
-    - Instance Name
-    - Git Link
-    - Privacy (Public vs Private)
-    - Access List (Optional - Unless Private) \*May make changes to this\*
+    - Upload to DynamoDB Table, the following Parameters:
+      - Instance Name
+      - Git Link
+      - Privacy (Public vs Private)
+      - Access List (Optional - Unless Private) \*May make changes to this\*
 2. Update TooInstance
-  - Change information of the respective TooInstance
-  - Update these changed information to DynamoDB
+    - Change information of the respective TooInstance
+    - Update these changed information to DynamoDB
 3. Create New Run for TooInstance
-  - Create a New Run of the TooInstance (that has been created before)
-    - Given Input Parameters and Arguments in the form of json format/file (eg. {"-O", "output.txt", "-U": { "0": {"S": "url"}, "1": {"S" : "quality"}})
-    - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
+    - Create a New Run of the TooInstance (that has been created before)
+      - Given Input Parameters and Arguments in the form of json format/file (eg. {"-O", "output.txt", "-U": { "0": {"S": "url"}, "1": {"S" : "quality"}})
+      - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
 4. List the Run Outputs corresponding to the specific TooInstance
