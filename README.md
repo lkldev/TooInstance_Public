@@ -85,6 +85,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
       - Git Link
       - Privacy (Public vs Private)
       - Access List (Optional - Unless Private) \*May make changes to this\*
+    - Trigger Lambda creation of Dockerfile
 2. Update TooInstance
     - Change information of the respective TooInstance
     - Update these changed information to DynamoDB
@@ -92,4 +93,6 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - Create a New Run of the TooInstance (that has been created before)
       - Given Input Parameters and Arguments in the form of json format/file (eg. {"-O", "output.txt", "-U": { "0": {"S": "url"}, "1": {"S" : "quality"}})
       - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
+    - Trigger running of Tool in Docker with the fed input arguments
 4. List the Run Outputs corresponding to the specific TooInstance
+    - Displaying Inputs used for that run, status and Output in the form of a file download
