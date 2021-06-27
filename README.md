@@ -3,12 +3,12 @@
 NOTE: **TBD - To Be Done**
 - [1. Introduction](#introduction)
 - [2. User Stories](#user-stories)
-- [3. Architecture and Flow](#architectureFlow)
-- [4. Components](#components)
-  - [4.1. Main Components](#main-comps)
-  - [4.2. Features](#features)
-    - [4.2.1. Milestone 1](#mile2)
-    - [4.2.2. Milestone 2](#mile2)
+- [3. Components](#components)
+  - [3.1. Main Components](#main-comps)
+  - [3.2. Features](#features)
+    - [3.2.1. Milestone 1](#mile1)
+    - [3.2.2. Milestone 2](#mile2)
+- [4. Architecture and Flow](#architectureFlow)
 
 
 ## <a name="introduction"></a>1. Introduction
@@ -48,29 +48,43 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* \* \* | User | Login to my own account | To create/run tool instances |
 | \* \* \* | User | Create a new Tool Instance | Run the instance with my desired input |
 | \* \* \* | User | See all the tools instances I have created | See my previous outputs and its corresponding input |
+| \* \* \* | User | See all public tools instances that the community has created | I can test those tools without having to create an instance on my end |
 | \* \* \* | User | Share the tool with other users | Let my friend/collaborator/colleague to try out without having to replicate the required environment |
 | \* \* \* | User | See the logs of the tools I have ran | See what errors have occurred |
 | \* \* | User | Reset my password | Change my password if I forgot |
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
 | \* | User | Enable 2FA | Prevent my account from being taken over |
 
+## <a name="components"></a>3. Components
+### 3.1 Main components
+- Dashboard Page
+- Create TooInstance Page
+- Update TooInstance Page
+- Create New Run Page
+- Output View Page
+- How to Run? Page (To be done in Mile3)
+- Public TooInstance Listing Page (To be done in Mile 3)
 
-## <a name="architectureFlow"></a>3. Architecture and Flow
+Sample Screenshots of our application components.
 
-**Overview of Architecture**
+Dashboard Page:
+![Empty Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/emptyToolInstance.jpg)
+![Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/toolInstanceList.jpg)
 
-![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
+Create TooInstance Page:
+![Create ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/createNewTool.jpg)
 
-**Sample Flow of Application**
+Update TooInstance Page:
+![Update ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/updatedTI.jpg)
 
-![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
+Create New Run Page:
+![New Run](https://github.com/lkldev/TooInstance_Public/blob/main/images/newRun.jpg)
 
-## <a name="components"></a>4. Components
-### 4.1 Main components
-- To Be Filled by Milestone 3
+Output View Page:
+![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.jpg)
 
-###<a name="features"></a> 4.2 Features
-####<a name="mile1"></a> 4.2.1 Features implemented in Milestone 1
+###<a name="features"></a> 3.2 Features
+####<a name="mile1"></a> 3.2.1 Features implemented in Milestone 1
 1. Login/Register
     - Register User
     - Login as User
@@ -78,7 +92,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
 2. Sample logged on Dashboard page with list of test data
 3. UI and UX changes for the web pages
 
-####<a name="mile2"></a> 4.2.2 Features Implemented in Milestone 2
+####<a name="mile2"></a> 3.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
     - Upload to DynamoDB Table, the following Parameters:
       - Instance Name
@@ -96,3 +110,14 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - Trigger running of Tool in Docker with the fed input arguments
 4. List the Run Outputs corresponding to the specific TooInstance
     - Displaying Inputs used for that run, status and Output in the form of a file download
+
+
+## <a name="architectureFlow"></a>4. Architecture and Flow
+
+**Overview of Architecture**
+
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
+
+**Sample Flow of Application**
+
+![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
