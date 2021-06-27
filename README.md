@@ -83,8 +83,10 @@ Create New Run Page:
 Output View Page:
 ![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.JPG)
 
-###<a name="features"></a> 3.2 Features
-####<a name="mile1"></a> 3.2.1 Features implemented in Milestone 1
+
+
+### <a name="features"></a> 3.2 Features
+#### <a name="mile1"></a> 3.2.1 Features implemented in Milestone 1
 1. Login/Register
     - Register User
     - Login as User
@@ -92,7 +94,7 @@ Output View Page:
 2. Sample logged on Dashboard page with list of test data
 3. UI and UX changes for the web pages
 
-####<a name="mile2"></a> 3.2.2 Features Implemented in Milestone 2
+#### <a name="mile2"></a> 3.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
     - Upload to DynamoDB Table, the following Parameters:
       - Instance Name
