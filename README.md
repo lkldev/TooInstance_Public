@@ -68,20 +68,20 @@ A Web Application hosted on AWS services that automates the creation of the dock
 Sample Screenshots of our application components.
 
 Dashboard Page:
-![Empty Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/emptyToolInstance.jpg)
-![Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/toolInstanceList.jpg)
+![Empty Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/emptyToolInstance.JPG)
+![Dashboard Page](https://github.com/lkldev/TooInstance_Public/blob/main/images/toolInstanceList.JPG)
 
 Create TooInstance Page:
-![Create ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/createNewTool.jpg)
+![Create ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/createNewTool.JPG)
 
 Update TooInstance Page:
-![Update ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/updatedTI.jpg)
+![Update ToolInstance](https://github.com/lkldev/TooInstance_Public/blob/main/images/updatedTI.JPG)
 
 Create New Run Page:
-![New Run](https://github.com/lkldev/TooInstance_Public/blob/main/images/newRun.jpg)
+![New Run](https://github.com/lkldev/TooInstance_Public/blob/main/images/newRun.JPG)
 
 Output View Page:
-![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.jpg)
+![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.JPG)
 
 ###<a name="features"></a> 3.2 Features
 ####<a name="mile1"></a> 3.2.1 Features implemented in Milestone 1
