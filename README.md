@@ -16,7 +16,7 @@ NOTE: **TBD - To Be Done**
 **Proposed Level of Achievement :** Apollo 11
 
 **Deployed Web Application (Link) :**
-[https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/](https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/)
+[https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev](https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/)
 
 ![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/posterV3.png)
 
@@ -106,7 +106,7 @@ Output View Page:
     - Update these changed information to DynamoDB
 3. Create New Run for TooInstance
     - Create a New Run of the TooInstance (that has been created before)
-      - Given Input Parameters and Arguments in the form of json format/file (eg. {"-O", "output.txt", "-U": { "0": {"S": "url"}, "1": {"S" : "quality"}})
+      - Given Input Parameters and Arguments in the form of json format/file (eg. {"0", "-O", "-T": "php,txt"})
       - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
     - Trigger running of Tool in Docker with the fed input arguments
 4. List the Run Outputs corresponding to the specific TooInstance
