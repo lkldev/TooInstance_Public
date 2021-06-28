@@ -18,7 +18,7 @@ NOTE: **TBD - To Be Done**
 **Deployed Web Application (Link) :**
 [https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev](https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/)
 
-![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/posterV3.png)
+![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/poster_mile2.png)
 
 **Motivation**
 
