@@ -61,9 +61,10 @@ A Web Application hosted on AWS services that automates the creation of the dock
 - Create TooInstance Page
 - Update TooInstance Page
 - Create New Run Page
+  - Backend Processing of inputs, to accept eg. ("-A -O output.txt") (TBD by Mile 3)
 - Output View Page
-- How to Run? Page (To be done in Mile3)
-- Public TooInstance Listing Page (To be done in Mile 3)
+- How to Run? Page (TBD by early-July)
+- Public TooInstance Listing Page (TBD by Mid-July)
 
 Sample Screenshots of our application components.
 
@@ -120,9 +121,18 @@ Output View Page:
       4. Create Elastic Container Registry.
       5. Create Code Build project to create the image of the tool the user wanted.
          - Code Build will create a fargate task using the image.
- 
+
 
 ### <a name="testing"></a> 3.3 User Testing
+#### <u>Plan (TBD during Early to Mid July)</u>
+1. Basic Testing with multiple Accounts
+  - Testing with most likely 2 Accounts
+  - Test Original Program Flow
+2. User Testing
+  - Invite friends/family/adviser to try out
+  - Gain Feedback/Improvements
+3. Bug Testing
+  - Try out invalid inputs to trigger/find bugs
 
 
 ## <a name="architectureFlow"></a>4. Architecture and Flow
