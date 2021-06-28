@@ -8,6 +8,7 @@ NOTE: **TBD - To Be Done**
   - [3.2. Features](#features)
     - [3.2.1. Milestone 1](#mile1)
     - [3.2.2. Milestone 2](#mile2)
+  - [3.3. Testing](#testing)
 - [4. Architecture and Flow](#architectureFlow)
 
 
@@ -100,7 +101,7 @@ Output View Page:
       - Git Link
       - Privacy (Public vs Private)
       - Access List (Optional - Unless Private) \*May make changes to this\*
-    - Trigger Lambda creation of Dockerfile
+    - Trigger Lambda to create Docker
 2. Update TooInstance
     - Change information of the respective TooInstance
     - Update these changed information to DynamoDB
@@ -111,6 +112,17 @@ Output View Page:
     - Trigger running of Tool in Docker with the fed input arguments
 4. List the Run Outputs corresponding to the specific TooInstance
     - Displaying Inputs used for that run, status and Output in the form of a file download
+5. Automate Docker creation
+    - Lambda triggered will call Fargate docker-creation perform the following:
+      1. Pull repository from the git link user have provided.
+      2. Add dockerfile and run scripts which are used to create and run the program.
+      3. Push repository into TooInstance Github.
+      4. Create Elastic Container Registry.
+      5. Create Code Build project to create the image of the tool the user wanted.
+         - Code Build will create a fargate task using the image.
+ 
+
+### <a name="testing"></a> 3.3 User Testing
 
 
 ## <a name="architectureFlow"></a>4. Architecture and Flow
