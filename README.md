@@ -50,7 +50,6 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* \* \* | User | See all the tools instances I have created | See my previous outputs and its corresponding input |
 | \* \* \* | User | See all public tools instances that the community has created | I can test those tools without having to create an instance on my end |
 | \* \* \* | User | Share the tool with other users | Let my friend/collaborator/colleague to try out without having to replicate the required environment |
-| \* \* \* | User | See the logs of the tools I have ran | See what errors have occurred |
 | \* \* | User | Reset my password | Change my password if I forgot |
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
 | \* | User | Enable 2FA | Prevent my account from being taken over |
