@@ -2,8 +2,8 @@
 ## Orbital 2021
 NOTE: **TBD - To Be Done**
 - [1. Introduction](#introduction)
-- [2. User Stories](#user-stories)
-- [3. Setting up](#setting-up)
+- [2. Setting up](#setting-up)
+- [3. User Stories](#user-stories)
 - [4. Components](#components)
   - [4.1. Main Components](#main-comps)
   - [4.2. Features](#features)
@@ -38,7 +38,21 @@ We hope to automate the creation of the necessary environment to run open-source
 
 A Web Application hosted on AWS services that automates the creation of the docker image of a specified tool and allows the user to share the instance of the tool with others.
 
-## <a name="user-stories"></a>2. User Stories
+## <a name="setting-up"></a>2. Setting Up
+#### Prerequisites
+  - Any IDE (Atom, Sublime Text etc.)
+  - Python3
+  - pip (For installing Python Packages)
+    - How to download? - https://pip.pypa.io/en/stable/installing/
+  - awscli (To configure your AWS Access and Secret key)
+    - How to download? - https://aws.amazon.com/cli/
+    - How to Configure the keys? - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+      - Note - You can leave the output format as default none (Don't type anything and click enter to leave it as default None)
+  -
+
+
+
+## <a name="user-stories"></a>3. User Stories
 
 **High priority \> Must Have: \* \* \***
 
