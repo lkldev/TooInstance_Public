@@ -3,13 +3,18 @@
 NOTE: **TBD - To Be Done**
 - [1. Introduction](#introduction)
 - [2. User Stories](#user-stories)
-- [3. Components](#components)
-  - [3.1. Main Components](#main-comps)
-  - [3.2. Features](#features)
-    - [3.2.1. Milestone 1](#mile1)
-    - [3.2.2. Milestone 2](#mile2)
-  - [3.3. Testing](#testing)
-- [4. Architecture and Flow](#architectureFlow)
+- [3. Setting up](#setting-up)
+- [4. Components](#components)
+  - [4.1. Main Components](#main-comps)
+  - [4.2. Features](#features)
+    - [4.2.1. Milestone 1](#mile1)
+    - [4.2.2. Milestone 2](#mile2)
+  - [4.3. Plan for Testing](#testing-plan)
+  - [4.4. Testing](#actual-testing)
+    - [4.4.1 Basic Testing](#basic-testing)
+    - [4.4.2 User Testing](#user-testing)
+    - [4.4.3 Bug Testing](#bug-testing)
+- [5. Architecture and Flow](#architecture-flow)
 
 
 ## <a name="introduction"></a>1. Introduction
@@ -55,16 +60,18 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
 | \* | User | Enable 2FA | Prevent my account from being taken over |
 
-## <a name="components"></a>3. Components
-### 3.1 Main components
+## <a name="components"></a>4. Components
+### 4.1 Main components
 - Dashboard Page
 - Create TooInstance Page
 - Update TooInstance Page
 - Create New Run Page
   - Backend Processing of inputs, to accept eg. ("-A -O output.txt") (TBD by Mile 3)
 - Output View Page
-- How to Run? Page (TBD by early-July)
-- Public TooInstance Listing Page (TBD by Mid-July)
+- How to Run? Page (TBD by mid-July)
+- Shared With Me Page (TBD by Early-July)
+  - *Update - Left with the backend logic for the access list to translate email address to UID*
+- Public TooInstance Listing Page (TBD by Early-July)
 
 Sample Screenshots of our application components.
 
@@ -86,8 +93,8 @@ Output View Page:
 
 
 
-### <a name="features"></a> 3.2 Features
-#### <a name="mile1"></a> 3.2.1 Features implemented in Milestone 1
+### <a name="features"></a> 4.2 Features
+#### <a name="mile1"></a> 4.2.1 Features implemented in Milestone 1
 1. Login/Register
     - Register User
     - Login as User
@@ -95,7 +102,7 @@ Output View Page:
 2. Sample logged on Dashboard page with list of test data
 3. UI and UX changes for the web pages
 
-#### <a name="mile2"></a> 3.2.2 Features Implemented in Milestone 2
+#### <a name="mile2"></a> 4.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
     - Upload to DynamoDB Table, the following Parameters:
       - Instance Name
@@ -108,7 +115,7 @@ Output View Page:
     - Update these changed information to DynamoDB
 3. Create New Run for TooInstance
     - Create a New Run of the TooInstance (that has been created before)
-      - Given Input Parameters and Arguments in the form of json format/file (eg. {"0", "-O", "-T": "php,txt"})
+      - Given Input Parameters and Arguments in the form of json format/file (eg. {"0": "-O", "1": "output.txt", "2": "-T", "3": "js,php"})
       - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
     - Trigger running of Tool in Docker with the fed input arguments
 4. List the Run Outputs corresponding to the specific TooInstance
@@ -123,7 +130,7 @@ Output View Page:
          - Code Build will create a fargate task using the image.
 
 
-### <a name="testing"></a> 3.3 User Testing
+### <a name="testing-plan"></a> 4.3 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
 1. Basic Testing with multiple Accounts
   - Testing with most likely 2 Accounts
@@ -134,8 +141,15 @@ Output View Page:
 3. Bug Testing
   - Try out invalid inputs to trigger/find bugs
 
+### <a name="actual-testing"></a> 4.4 Testing
+#### <a name="basic-testing"></a> 4.4.1 Basic Testing
+*-to be filled up-*
+#### <a name="user-testing"></a> 4.4.2 User Testing
+*-to be filled up-*
+#### <a name="bug-testing"></a> 4.4.3 Bug Testing
+*-to be filled up-*
 
-## <a name="architectureFlow"></a>4. Architecture and Flow
+## <a name="architecture-flow"></a>5. Architecture and Flow
 
 **Overview of Architecture**
 
