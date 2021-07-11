@@ -156,11 +156,11 @@ Output View Page:
 
 
 #### <a name="mile3"></a> 4.2.3 Features To-Be-Implemented in Milestone 3
-1. Public Listing (*by Early-July*)
+1. Public Listing (*By Early-July*)
     - Display all Non-Private TooInstances
     - Search Filtering by TooInstance Names
 
-2. Shared with Me Functionality (*by Early-July*)
+2. Shared with Me Functionality (*By Early-July*)
     - Displays All Instances that have been Private but whitelisted/allowed to you
     - Backend Processing Changes for Create/Update Page
       - Enable Privacy and Access List
@@ -171,10 +171,13 @@ Output View Page:
       - We now also accept eg. -O output.txt -T js,php
       - Afterwards, processed in backend to be converted to json format
 
-4. How To Run Page (*by Mid July*)
+4. How To Run Page (*By Mid July*)
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
+5. Run History (*By Mid July*)
+
+6. Nodejs RunTime Implementation (*By Mid July*)
 
 ### <a name="testing-plan"></a> 4.3 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
