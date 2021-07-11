@@ -84,10 +84,12 @@ A Web Application hosted on AWS services that automates the creation of the dock
 - Update TooInstance Page
 - Create New Run Page
   - Backend Processing of inputs, to accept eg. ("-A -O output.txt") (TBD by Mile 3)
+
 - Output View Page
 - How to Run? Page (TBD by mid-July)
 - Shared With Me Page (TBD by Early-July)
   - *Update - Left with the backend logic for the access list to translate email address to UID*
+
 - Public TooInstance Listing Page (TBD by Early-July)
 
 Sample Screenshots of our application components.
@@ -115,7 +117,9 @@ Output View Page:
     - Register User
     - Login as User
     - Logout of User Account
+
 2. Sample logged on Dashboard page with list of test data
+
 3. UI and UX changes for the web pages
 
 
@@ -127,16 +131,20 @@ Output View Page:
       - Privacy (Public vs Private)
       - Access List (Optional - Unless Private) \*May make changes to this\*
     - Trigger Lambda to create Docker
+
 2. Update TooInstance
     - Change information of the respective TooInstance
     - Update these changed information to DynamoDB
+
 3. Create New Run for TooInstance
     - Create a New Run of the TooInstance (that has been created before)
       - Given Input Parameters and Arguments in the form of json format/file (eg. {"0": "-O", "1": "output.txt", "2": "-T", "3": "js,php"})
       - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
     - Trigger running of Tool in Docker with the fed input arguments
+
 4. List the Run Outputs corresponding to the specific TooInstance
     - Displaying Inputs used for that run, status and Output in the form of a file download
+
 5. Automate Docker creation
     - Lambda triggered will call Fargate docker-creation perform the following:
       1. Pull repository from the git link user have provided.
@@ -151,11 +159,19 @@ Output View Page:
 1. Public Listing (*by Early-July*)
     - Display all Non-Private TooInstances
     - Search Filtering by TooInstance Names
-2. Shared with Me Functionality - Through Access List (*by Early-July*)
-    - Allow whitelisted Users to use/run Private TooInstances
-    - Backend Processing for Create/Update Tool to enable Privacy and Access List
-      - Automatically converts valid emails (in Access List) to UIDs on backend
-3. How To Run Page (*by Mid July*)
+
+2. Shared with Me Functionality (*by Early-July*)
+    - Displays All Instances that have been Private but whitelisted/allowed to you
+    - Backend Processing Changes for Create/Update Page
+      - Enable Privacy and Access List
+        - Automatically converts valid emails (in Access List) to UIDs on backend
+
+3. *New* Added additional backend Processing for New Run
+    - Allow users to give simple command line args format instead of just json format (Tough for less technical users)
+      - We now also accept eg. -O output.txt -T js,php
+      - Afterwards, processed in backend to be converted to json format
+
+4. How To Run Page (*by Mid July*)
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
