@@ -9,7 +9,7 @@ NOTE: **TBD - To Be Done**
   - [4.2. Features](#features)
     - [4.2.1. Milestone 1](#mile1)
     - [4.2.2. Milestone 2](#mile2)
-    - [4.2.3. Milestone 3](#mile3)
+    - [4.2.3. To-Be-Implemented Milestone 3](#mile3)
   - [4.3. Plan for Testing](#testing-plan)
   - [4.4. Testing](#actual-testing)
     - [4.4.1 Basic Testing](#basic-testing)
