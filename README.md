@@ -179,13 +179,13 @@ Output View Page:
 ### <a name="testing-plan"></a> 4.3 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
 1. Basic Testing with multiple Accounts
-  - Testing with most likely 2 Accounts
-  - Test Original Program Flow
+    - Testing with most likely 2 Accounts
+    - Test Original Program Flow
 2. User Testing
-  - Invite friends/family/adviser to try out
-  - Gain Feedback/Improvements
+    - Invite friends/family/adviser to try out
+    - Gain Feedback/Improvements
 3. Bug Testing
-  - Try out invalid inputs to trigger/find bugs
+    - Try out invalid inputs to trigger/find bugs
 
 
 ### <a name="actual-testing"></a> 4.4 Testing
