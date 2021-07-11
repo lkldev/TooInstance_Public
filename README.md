@@ -39,6 +39,7 @@ We hope to automate the creation of the necessary environment to run open-source
 
 A Web Application hosted on AWS services that automates the creation of the docker image of a specified tool and allows the user to share the instance of the tool with others.
 
+
 ## <a name="setting-up"></a>2. Setting Up
 #### Prerequisites
   - Any IDE (Atom, Sublime Text etc.)
@@ -49,8 +50,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - How to download? - https://aws.amazon.com/cli/
     - How to Configure the keys? - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
       - Note - You can leave the output format as default none (Don't type anything and click enter to leave it as default None)
-  -
-
+  - *TOBEFILLED*
 
 
 ## <a name="user-stories"></a>3. User Stories
@@ -68,12 +68,14 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* \* \* | User | Create an account | Have my own personal account |
 | \* \* \* | User | Login to my own account | To create/run tool instances |
 | \* \* \* | User | Create a new Tool Instance | Run the instance with my desired input |
+| \* \* \* | User | Run my TooInstance | Test/Run my Tool without any physical environment set up |
 | \* \* \* | User | See all the tools instances I have created | See my previous outputs and its corresponding input |
 | \* \* \* | User | See all public tools instances that the community has created | I can test those tools without having to create an instance on my end |
 | \* \* \* | User | Share the tool with other users | Let my friend/collaborator/colleague to try out without having to replicate the required environment |
 | \* \* | User | Reset my password | Change my password if I forgot |
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
 | \* | User | Enable 2FA | Prevent my account from being taken over |
+
 
 ## <a name="components"></a>4. Components
 ### 4.1 Main components
@@ -107,7 +109,6 @@ Output View Page:
 ![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.JPG)
 
 
-
 ### <a name="features"></a> 4.2 Features
 #### <a name="mile1"></a> 4.2.1 Features implemented in Milestone 1
 1. Login/Register
@@ -116,6 +117,7 @@ Output View Page:
     - Logout of User Account
 2. Sample logged on Dashboard page with list of test data
 3. UI and UX changes for the web pages
+
 
 #### <a name="mile2"></a> 4.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
@@ -144,14 +146,15 @@ Output View Page:
       5. Create Code Build project to create the image of the tool the user wanted.
          - Code Build will create a fargate task using the image.
 
+
 #### <a name="mile3"></a> 4.2.3 Features To-Be-Implemented in Milestone 3
 1. Public Listing (*by Early-July*)
     - Display all Non-Private TooInstances
-    - Allow Filtering to Search by TooInstance Names
+    - Search Filtering by TooInstance Names
 2. Shared with Me Functionality - Through Access List (*by Early-July*)
-    - Allow whitelisted Users to use Private TooInstances
-    - Backend for Create/Update Tool to enable Privacy and Access List
-    - Access List -> Takes in email address -> Automatically converts valid email to UID on backend
+    - Allow whitelisted Users to use/run Private TooInstances
+    - Backend Processing for Create/Update Tool to enable Privacy and Access List
+      - Automatically converts valid emails (in Access List) to UIDs on backend
 3. How To Run Page (*by Mid July*)
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
@@ -168,6 +171,7 @@ Output View Page:
 3. Bug Testing
   - Try out invalid inputs to trigger/find bugs
 
+
 ### <a name="actual-testing"></a> 4.4 Testing
 #### <a name="basic-testing"></a> 4.4.1 Basic Testing
 *-to be filled up-*
@@ -176,8 +180,8 @@ Output View Page:
 #### <a name="bug-testing"></a> 4.4.3 Bug Testing
 *-to be filled up-*
 
-## <a name="architecture"></a>5. Architecture and Flow
 
+## <a name="architecture"></a>5. Architecture and Flow
 **Overview of Architecture**
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
