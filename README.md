@@ -9,12 +9,13 @@ NOTE: **TBD - To Be Done**
   - [4.2. Features](#features)
     - [4.2.1. Milestone 1](#mile1)
     - [4.2.2. Milestone 2](#mile2)
+    - [4.2.3. Milestone 3](#mile3)
   - [4.3. Plan for Testing](#testing-plan)
   - [4.4. Testing](#actual-testing)
     - [4.4.1 Basic Testing](#basic-testing)
     - [4.4.2 User Testing](#user-testing)
     - [4.4.3 Bug Testing](#bug-testing)
-- [5. Architecture and Flow](#architecture-flow)
+- [5. Architecture](#architecture)
 
 
 ## <a name="introduction"></a>1. Introduction
@@ -143,6 +144,18 @@ Output View Page:
       5. Create Code Build project to create the image of the tool the user wanted.
          - Code Build will create a fargate task using the image.
 
+#### <a name="mile3"></a> 4.2.3 Features To-Be-Implemented in Milestone 3
+1. Public Listing (*by Early-July*)
+    - Display all Non-Private TooInstances
+    - Allow Filtering to Search by TooInstance Names
+2. Shared with Me Functionality - Through Access List (*by Early-July*)
+    - Allow whitelisted Users to use Private TooInstances
+    - Backend for Create/Update Tool to enable Privacy and Access List
+    - Access List -> Takes in email address -> Automatically converts valid email to UID on backend
+3. How To Run Page (*by Mid July*)
+    - Least of Priority in terms of functionality
+    - Mainly to boost/help with the user usage on the TooInstance Run
+
 
 ### <a name="testing-plan"></a> 4.3 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
@@ -163,7 +176,7 @@ Output View Page:
 #### <a name="bug-testing"></a> 4.4.3 Bug Testing
 *-to be filled up-*
 
-## <a name="architecture-flow"></a>5. Architecture and Flow
+## <a name="architecture"></a>5. Architecture and Flow
 
 **Overview of Architecture**
 
