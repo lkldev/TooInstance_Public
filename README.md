@@ -77,7 +77,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* | User | Enable 2FA | Prevent my account from being taken over |
 
 
-## <a name="#main-comps"></a>4. Components
+## <a name="main-comps"></a>4. Components
 ### 4.1 Main components
 - Dashboard Page
 - Create TooInstance Page
