@@ -2,20 +2,22 @@
 ## Orbital 2021
 NOTE: **TBD - To Be Done**
 - [1. Introduction](#introduction)
-- [2. Setting up](#setting-up)
-- [3. User Stories](#user-stories)
-- [4. Components](#components)
-  - [4.1. Main Components](#main-comps)
-  - [4.2. Features](#features)
-    - [4.2.1. Milestone 1](#mile1)
-    - [4.2.2. Milestone 2](#mile2)
-    - [4.2.3. To-Be-Implemented Milestone 3](#mile3)
-  - [4.3. Plan for Testing](#testing-plan)
-  - [4.4. Testing](#actual-testing)
-    - [4.4.1 Basic Testing](#basic-testing)
-    - [4.4.2 User Testing](#user-testing)
-    - [4.4.3 Bug Testing](#bug-testing)
-- [5. Architecture](#architecture)
+- [2. Tech Stack](#tech-stack)
+- [3. Architecture](#architecture)
+- [4. Setting up](#setting-up)
+- [5. User Stories](#user-stories)
+- [6. Components](#components)
+  - [6.1. Main Components](#main-comps)
+  - [6.2. Features](#features)
+    - [6.2.1. Milestone 1](#mile1)
+    - [6.2.2. Milestone 2](#mile2)
+    - [6.2.3. To-Be-Implemented Milestone 3](#mile3)
+- [7. Testing](#testing)
+  - [7.1. Plan for Testing](#testing-plan)
+  - [7.2. Actual Testing](#actual-testing)
+    - [7.2.1 Basic Testing](#basic-testing)
+    - [7.2.2 User Testing](#user-testing)
+    - [7.2.3 Bug Testing](#bug-testing)
 
 
 ## <a name="introduction"></a>1. Introduction
@@ -24,6 +26,8 @@ NOTE: **TBD - To Be Done**
 
 **Deployed Web Application (Link) :**
 [https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev](https://2dua5jkdm2.execute-api.ap-southeast-1.amazonaws.com/dev/)
+
+*Note - If you have previously created TooInstances with us during Milestone 2, they may be gone as we have done a hard reset of the TooInstances*
 
 ![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/poster_mile2.png)
 
@@ -40,7 +44,20 @@ We hope to automate the creation of the necessary environment to run open-source
 A Web Application hosted on AWS services that automates the creation of the docker image of a specified tool and allows the user to share the instance of the tool with others.
 
 
-## <a name="setting-up"></a>2. Setting Up
+## <a name="tech-stack"></a> 2. Tech Stack
+
+
+## <a name="architecture"></a> 3. Architecture and Flow
+**Overview of Architecture**
+
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
+
+**Sample Flow of Application**
+
+![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
+
+
+## <a name="setting-up"></a>4. Setting Up
 #### Prerequisites
   - Any IDE (Atom, Sublime Text etc.)
   - Python3
@@ -53,7 +70,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
   - *TOBEFILLED*
 
 
-## <a name="user-stories"></a>3. User Stories
+## <a name="user-stories"></a>5. User Stories
 
 **High priority \> Must Have: \* \* \***
 
@@ -65,20 +82,23 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 | **Priority** | **As a...** | **I want to be able to ...** | **So that I can ...** |
 | --- | --- | --- | --- |
-| \* \* \* | User | Create an account | Have my own personal account |
+| \* \* \* | User | Create an account | Have my own personal account|
 | \* \* \* | User | Login to my own account | To create/run tool instances |
-| \* \* \* | User | Create a new Tool Instance | Run the instance with my desired input |
+| \* \* \* | User | Create a new TooInstance | Later run the instance with my desired input |
+| \* \* \* | User | Enter my command inputs | Create a run of the TooInstance with my desired inputs |
 | \* \* \* | User | Run my TooInstance | Test/Run my Tool without any physical environment set up |
-| \* \* \* | User | See all the tools instances I have created | See my previous outputs and its corresponding input |
-| \* \* \* | User | See all public tools instances that the community has created | I can test those tools without having to create an instance on my end |
-| \* \* \* | User | Share the tool with other users | Let my friend/collaborator/colleague to try out without having to replicate the required environment |
+| \* \* \* | User | See all the TooInstances I have created | See my previous outputs and its corresponding input |
+| \* \* \* | User | See all public TooInstances that the community has created | I can test out interesting tools without having to create an instance on my account |
+| \* \* \* | User | Private and share the TooInstance only with someone I know | Let only my friend/collaborator/colleague to try out and not the general public |
+| \* \* \* | User | See the TooInstances that have been shared with me | Run/test out these Private TooInstances |
+| \* \* | User | See my past Run History | Easily see my most recent run without going through a long process of traversing to find them |
 | \* \* | User | Reset my password | Change my password if I forgot |
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
 | \* | User | Enable 2FA | Prevent my account from being taken over |
 
 
-## <a name="main-comps"></a>4. Components
-### 4.1 Main components
+## <a name="main-comps"></a>6. Components
+### 6.1 Main components
 - Dashboard Page
 - Create TooInstance Page
 - Update TooInstance Page
@@ -111,8 +131,8 @@ Output View Page:
 ![OutputList](https://github.com/lkldev/TooInstance_Public/blob/main/images/runOutputList.JPG)
 
 
-### <a name="features"></a> 4.2 Features
-#### <a name="mile1"></a> 4.2.1 Features implemented in Milestone 1
+### <a name="features"></a> 6.2 Features
+#### <a name="mile1"></a> 6.2.1 Features implemented in Milestone 1
 1. Login/Register
     - Register User
     - Login as User
@@ -123,7 +143,7 @@ Output View Page:
 3. UI and UX changes for the web pages
 
 
-#### <a name="mile2"></a> 4.2.2 Features Implemented in Milestone 2
+#### <a name="mile2"></a> 6.2.2 Features Implemented in Milestone 2
 1. Create TooInstance (New Instance of Tool)
     - Upload to DynamoDB Table, the following Parameters:
       - Instance Name
@@ -155,18 +175,18 @@ Output View Page:
          - Code Build will create a fargate task using the image.
 
 
-#### <a name="mile3"></a> 4.2.3 Features To-Be-Implemented in Milestone 3
-1. Public Listing (*By Early-July*)
+#### <a name="mile3"></a> 6.2.3 Features To-Be-Implemented in Milestone 3
+1. Public Listing (*Done*)
     - Display all Non-Private TooInstances
     - Search Filtering by TooInstance Names
 
-2. Shared with Me Functionality (*By Early-July*)
+2. Shared with Me Functionality (*Done*)
     - Displays All Instances that have been Private but whitelisted/allowed to you
     - Backend Processing Changes for Create/Update Page
       - Enable Privacy and Access List
         - Automatically converts valid emails (in Access List) to UIDs on backend
 
-3. *New* Added additional backend Processing for New Run
+3. *New* Added additional backend Processing for New Run (*Done*)
     - Allow users to give simple command line args format instead of just json format (Tough for less technical users)
       - We now also accept eg. -O output.txt -T js,php
       - Afterwards, processed in backend to be converted to json format
@@ -175,11 +195,15 @@ Output View Page:
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
-5. Run History (*By Mid July*)
+5. *New* Run History (*By Mid July*)
+    - Allows users to view past runs from a history list
 
 6. Nodejs RunTime Implementation (*By Mid July*)
+    - To allow Running of Nodejs TooInstances
 
-### <a name="testing-plan"></a> 4.3 Plan for Testing
+## <a name="testing"></a> 7. Testing
+
+### <a name="testing-plan"></a> 7.1 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
 1. Basic Testing with multiple Accounts
     - Testing with most likely 2 Accounts
@@ -191,20 +215,12 @@ Output View Page:
     - Try out invalid inputs to trigger/find bugs
 
 
-### <a name="actual-testing"></a> 4.4 Testing
-#### <a name="basic-testing"></a> 4.4.1 Basic Testing
+### <a name="actual-testing"></a> 7.2 Actual Testing
+#### <a name="basic-testing"></a> 7.2.1 Basic Testing
 *-to be filled up-*
-#### <a name="user-testing"></a> 4.4.2 User Testing
-*-to be filled up-*
-#### <a name="bug-testing"></a> 4.4.3 Bug Testing
+#### <a name="user-testing"></a> 7.2.2 User Testing
 *-to be filled up-*
 
-
-## <a name="architecture"></a>5. Architecture and Flow
-**Overview of Architecture**
-
-![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
-
-**Sample Flow of Application**
-
-![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
+*Current Feedbacks(summarised for now) from Teams, Adviser and Friends (Studying IT related) - Mainly the issues were focusing on the vague progression of the creation and run, as well as the run inputs(hard to use - only json allowed)*
+#### <a name="bug-testing"></a> 7.2.3 Bug Testing
+*-to be filled up-*
