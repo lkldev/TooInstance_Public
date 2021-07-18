@@ -45,9 +45,14 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 
 ## <a name="tech-stack"></a> 2. Tech Stack
+1. Python Flask
+2. AWS DynamoDB
+3. AWS ECS
+4. AWS Lambda
+5. AWS CodeBuild
 
 
-## <a name="architecture"></a> 3. Architecture and Flow
+## <a name="architecture"></a> 3. Architecture
 **Overview of Architecture**
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
@@ -58,6 +63,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 
 ## <a name="setting-up"></a>4. Setting Up
+*Note - Sample Set Up on Windows Machine*
 #### Prerequisites
   - Any IDE (Atom, Sublime Text etc.)
   - Python3
