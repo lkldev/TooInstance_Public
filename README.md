@@ -50,6 +50,8 @@ A Web Application hosted on AWS services that automates the creation of the dock
 3. AWS ECS
 4. AWS Lambda
 5. AWS CodeBuild
+6. AWS S3
+7. AWS Lambda
 
 
 ## <a name="architecture"></a> 3. Architecture
