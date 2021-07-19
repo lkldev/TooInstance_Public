@@ -76,7 +76,6 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - How to download? - https://aws.amazon.com/cli/
     - How to Configure the keys? - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
       - Note - You can leave the output format as default none (Don't type anything and click enter to leave it as default None)
-  - *TOBEFILLED*
 #### Setting Up on Localhost
   - Below is an overview of our project directory structure
 
