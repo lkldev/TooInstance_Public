@@ -82,8 +82,14 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
 
-  - Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder, then the app folder as seen below.
-  
+  - Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder which contains the requirements.txt file.
+
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/requirementsTxt.jpg)
+
+  - Afterwards, run "pip3 install -r requirements.txt" and let it install the necessary packages.
+  - Next, traverse back to the root folder (TooInstance/). Then, add the lines as seen below.
+
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/awsconfigJson.jpg)
 
 
 ## <a name="user-stories"></a>5. User Stories
