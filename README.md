@@ -77,22 +77,25 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - How to Configure the keys? - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
       - Note - You can leave the output format as default none (Don't type anything and click enter to leave it as default None)
   - *TOBEFILLED*
-#### Setting Up
+#### Setting Up on Localhost
   - Below is an overview of our project directory structure
 
-![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
+![overviewDir](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
 
   1. Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder which contains the requirements.txt file.
 
-![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/requirementsTxt.jpg)
+![requirements](https://github.com/lkldev/TooInstance_Public/blob/main/images/requirementsTxt.jpg)
 
   2. Afterwards, run "pip3 install -r requirements.txt" and let it install the necessary packages.
   3. Next, traverse back to the root folder (TooInstance/). Then, add the lines as seen below and save it in this root folder as "awsconfig.json".
 
-![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/awsconfigJson.jpg)
+![awsconfigjson](https://github.com/lkldev/TooInstance_Public/blob/main/images/awsconfigJson.jpg)
 
   4. At the same root folder, run "python genAWSConfig.py" and then, you are set to run the flask application.
-  5. Traverse to the dashboard folder again, then run "python flask_web.py"
+  5. Traverse to the dashboard folder again, then run "python flask_web.py". The application should now be running at 127.0.0.1:5000.
+
+![runningApp](https://github.com/lkldev/TooInstance_Public/blob/main/images/runningApp.jpg)
+
 
 ## <a name="user-stories"></a>5. User Stories
 
