@@ -79,7 +79,11 @@ A Web Application hosted on AWS services that automates the creation of the dock
   - *TOBEFILLED*
 #### Setting Up
   - Below is an overview of our project directory structure
+
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
+
+  - Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder, then the app folder as seen below.
+  
 
 
 ## <a name="user-stories"></a>5. User Stories
