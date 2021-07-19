@@ -221,7 +221,7 @@ Output View Page:
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
-5. *New* Run History (*By Mid July*)
+5. *New* Run History (*Done*)
     - Allows users to view past runs from a history list
 
 6. Nodejs RunTime Implementation (*By Mid July*)
