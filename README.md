@@ -69,6 +69,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
 #### Prerequisites
   - Any IDE (Atom, Sublime Text etc.)
   - Python3
+    - *optional - you may set up a virtual environment to install the required packages*
   - pip (For installing Python Packages)
     - How to download? - https://pip.pypa.io/en/stable/installing/
   - awscli (To configure your AWS Access and Secret key)
@@ -76,6 +77,9 @@ A Web Application hosted on AWS services that automates the creation of the dock
     - How to Configure the keys? - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
       - Note - You can leave the output format as default none (Don't type anything and click enter to leave it as default None)
   - *TOBEFILLED*
+#### Setting Up
+  - Below is an overview of our project directory structure
+![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
 
 
 ## <a name="user-stories"></a>5. User Stories
