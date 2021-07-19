@@ -82,15 +82,17 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/overviewDirStructure.jpg)
 
-  - Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder which contains the requirements.txt file.
+  1. Using Commandline (Please note - I have enabled virtual environment on my end), traverse to the dashboard folder which contains the requirements.txt file.
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/requirementsTxt.jpg)
 
-  - Afterwards, run "pip3 install -r requirements.txt" and let it install the necessary packages.
-  - Next, traverse back to the root folder (TooInstance/). Then, add the lines as seen below.
+  2. Afterwards, run "pip3 install -r requirements.txt" and let it install the necessary packages.
+  3. Next, traverse back to the root folder (TooInstance/). Then, add the lines as seen below and save it in this root folder as "awsconfig.json".
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/awsconfigJson.jpg)
 
+  4. At the same root folder, run "python genAWSConfig.py" and then, you are set to run the flask application.
+  5. Traverse to the dashboard folder again, then run "python flask_web.py"
 
 ## <a name="user-stories"></a>5. User Stories
 
