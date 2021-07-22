@@ -217,14 +217,14 @@ Output View Page:
       - We now also accept eg. -O output.txt -T js,php
       - Afterwards, processed in backend to be converted to json format
 
-4. How To Run Page (*By Mid July*)
+4. How To Run Page (*Done*)
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
 5. *New* Run History (*Done*)
     - Allows users to view past runs from a history list
 
-6. Nodejs RunTime Implementation (*By Mid July*)
+6. Nodejs RunTime Implementation (*Done*)
     - To allow Running of Nodejs TooInstances
 
 ## <a name="testing"></a> 7. Testing
