@@ -12,12 +12,13 @@ NOTE: **TBD - To Be Done**
     - [6.2.1. Milestone 1](#mile1)
     - [6.2.2. Milestone 2](#mile2)
     - [6.2.3. To-Be-Implemented Milestone 3](#mile3)
-- [7. Testing](#testing)
-  - [7.1. Plan for Testing](#testing-plan)
-  - [7.2. Actual Testing](#actual-testing)
-    - [7.2.1 Basic Testing](#basic-testing)
-    - [7.2.2 User Testing](#user-testing)
-    - [7.2.3 Bug Testing](#bug-testing)
+- [7. How to Use TooInstance?](#howToUse)
+- [8. Testing](#testing)
+  - [8.1. Plan for Testing](#testing-plan)
+  - [8.2. Actual Testing](#actual-testing)
+    - [8.2.1 Basic Testing](#basic-testing)
+    - [8.2.2 User Testing](#user-testing)
+    - [8.2.3 Bug Testing](#bug-testing)
 
 
 ## <a name="introduction"></a>1. Introduction
@@ -217,7 +218,7 @@ Output View Page:
       - We now also accept eg. -O output.txt -T js,php
       - Afterwards, processed in backend to be converted to json format
 
-4. How To Run Page (*Done*)
+4. How To ~Run~ Use Page (*Done*)
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
@@ -227,9 +228,12 @@ Output View Page:
 6. Nodejs RunTime Implementation (*Done*)
     - To allow Running of Nodejs TooInstances
 
-## <a name="testing"></a> 7. Testing
+## <a name="user-stories"></a>7. User Stories
 
-### <a name="testing-plan"></a> 7.1 Plan for Testing
+
+## <a name="testing"></a> 8. Testing
+
+### <a name="testing-plan"></a> 8.1 Plan for Testing
 #### <u>Plan (TBD during Early to Mid July)</u>
 1. Basic Testing with multiple Accounts
     - Testing with most likely 2 Accounts
@@ -241,12 +245,32 @@ Output View Page:
     - Try out invalid inputs to trigger/find bugs
 
 
-### <a name="actual-testing"></a> 7.2 Actual Testing
-#### <a name="basic-testing"></a> 7.2.1 Basic Testing
+### <a name="actual-testing"></a> 8.2 Actual Testing
+#### <a name="basic-testing"></a> 8.2.1 Basic Testing
 *-to be filled up-*
-#### <a name="user-testing"></a> 7.2.2 User Testing
+#### <a name="user-testing"></a> 8.2.2 User Testing
 *-to be filled up-*
 
 *Current Feedbacks(summarised for now) from Teams, Adviser and Friends (Studying IT related) - Mainly the issues were focusing on the vague progression of the creation and run, as well as the run inputs(hard to use - only json allowed)*
-#### <a name="bug-testing"></a> 7.2.3 Bug Testing
+#### <a name="bug-testing"></a> 8.2.3 Bug Testing
 *-to be filled up-*
+
+Bug #1 - Some Run Inputs not parsed into Json format (in backend)
+  - Sample Input - "http://www.google.com" (Includes the quotations)
+  - Credits to our Adviser Neil
+  - Reason for bug was due to the check whether the input is in JSON format, which went through as True, thus causing the input to be not parsed into JSON format.
+  - Fix - Another layer of checking to verify whether it is in JSON format.
+
+Bug #2 - Server Error when Creating Tool that is Public
+  - Server Error - Regarding the variable being referenced before assignment (variable related to Access List value being used to be passed to function)
+  - Reason of the Bug/Error was due to mistake of not changing the variable name correctly. (Although, there was no issues on Local Test Environment)
+  - Quick Fix - Change the variable name/Assign it a decoy value
+
+Bug #3 - Server Error when Creating
+  - Server Error - Policies/Permissions regarding Cognito (AWS) operations
+  - Reason was due to lack of permissions/policies to execute the Cognito-related commands (For translating the emails -> to UIDs)
+  - Fix - Give the necessary Cognito Policies to the "instance" of our Application running
+
+Bug #4 - Neatly formatted version of JSON-provided Run Inputs
+  -  Reason was when the Input Parameters are nicely formatted in JSON format, resulting JSON-ed Inputs break/not as expected due to the \r\n being included (other characters incl. \t, \u2003)
+  - Fix - Strip out the carriage returns (\r\n), tabs (\t, \u2003 - from the sample JSON format at the left side on the page)
