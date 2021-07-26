@@ -306,6 +306,7 @@ Personally, the command line format would be more easy to use and less time cons
 ### <a name="actual-testing"></a> 8.2 Actual Testing
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
 We tested using 2 accounts - themis@example.com (Themis) and lkldev@outlook.com (Dev)
+
 First, for themis@example.com, we will be creating TooInstances and sharing it with lkldev@outlook.com.
 
 Themis first logs in and is presented with a dashboard containing all Themis's TooInstances(TI).
@@ -346,7 +347,7 @@ Dev is redirected to the "Shared with Me" Page containing Private TIs that has b
 
 ![sharedWithDev](https://github.com/lkldev/TooInstance_Public/blob/main/images/sharedWithDev.JPG)
 
-Dev being sus of our application, goes to the Public Listing Page to make sure that our application did not accidentally make the TI as public. However, it was indeed private as Dev could not see it in the Public Listing and from there, Dev was relieved. And they lived happily ever after. <FIN>
+Dev being sus of our application, goes to the Public Listing Page to make sure that our application did not accidentally make the TI as public. However, it was indeed private as Dev could not see it in the Public Listing and from there, Dev was relieved. And they lived happily ever after. \<FIN\>
 
 ![publicListingWorking](https://github.com/lkldev/TooInstance_Public/blob/main/images/publicListingWorking.JPG)
 
