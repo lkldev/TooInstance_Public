@@ -225,7 +225,6 @@ How To Use Page:
     - Displays All Instances that have been Private but whitelisted/allowed to you
     - Backend Processing Changes for Create/Update Page
       - Enable Privacy and Access List
-        - Automatically converts valid emails (in Access List) to UIDs on backend
 
 3. Added additional backend Processing for New Run
     - Allow users to give simple command line args format instead of just json format (Tough for less technical users)
