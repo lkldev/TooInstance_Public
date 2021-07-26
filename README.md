@@ -1,6 +1,5 @@
 # TooInstance (Previously known as EviThemis)
 ## Orbital 2021
-NOTE: **TBD - To Be Done**
 - [1. Introduction](#introduction)
 - [2. Tech Stack](#tech-stack)
 - [3. Architecture](#architecture)
@@ -11,7 +10,7 @@ NOTE: **TBD - To Be Done**
   - [6.2. Features](#features)
     - [6.2.1. Milestone 1](#mile1)
     - [6.2.2. Milestone 2](#mile2)
-    - [6.2.3. To-Be-Implemented Milestone 3](#mile3)
+    - [6.2.3. Milestone 3](#mile3)
 - [7. How to Use TooInstance?](#howToUse)
 - [8. Testing](#testing)
   - [8.1. Plan for Testing](#testing-plan)
@@ -130,14 +129,14 @@ A Web Application hosted on AWS services that automates the creation of the dock
 - Create TooInstance Page
 - Update TooInstance Page
 - Create New Run Page
-  - Backend Processing of inputs, to accept eg. ("-A -O output.txt") (TBD by Mile 3)
+  - Backend Processing of inputs, to accept eg. ("-A -O output.txt")
 
 - Output View Page
-- How to Run? Page (TBD by mid-July)
-- Shared With Me Page (TBD by Early-July)
+- How to Run? Page
+- Shared With Me Page
   - *Update - Left with the backend logic for the access list to translate email address to UID*
 
-- Public TooInstance Listing Page (TBD by Early-July)
+- Public TooInstance Listing Page
 
 Sample Screenshots of our application components.
 
@@ -186,7 +185,7 @@ Output View Page:
 3. Create New Run for TooInstance
     - Create a New Run of the TooInstance (that has been created before)
       - Given Input Parameters and Arguments in the form of json format/file (eg. {"0": "-O", "1": "output.txt", "2": "-T", "3": "js,php"})
-      - You can check out more examples at our "How To create New Run" Page (To be implemented in Milestone 3)
+      - You can check out more examples at our "How To create New Run" Page
     - Trigger running of Tool in Docker with the fed input arguments
 
 4. List the Run Outputs corresponding to the specific TooInstance
@@ -202,7 +201,7 @@ Output View Page:
          - Code Build will create a fargate task using the image.
 
 
-#### <a name="mile3"></a> 6.2.3 Features To-Be-Implemented in Milestone 3
+#### <a name="mile3"></a> 6.2.3 Features Implemented in Milestone 3
 1. Public Listing (*Done*)
     - Display all Non-Private TooInstances
     - Search Filtering by TooInstance Names
@@ -234,7 +233,7 @@ Output View Page:
 ## <a name="testing"></a> 8. Testing
 
 ### <a name="testing-plan"></a> 8.1 Plan for Testing
-#### <u>Plan (TBD during Early to Mid July)</u>
+#### <u>Plan</u>
 1. Basic Testing with multiple Accounts
     - Testing with most likely 2 Accounts
     - Test Original Program Flow
