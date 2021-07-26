@@ -248,14 +248,14 @@ Output View Page:
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
 *-to be filled up-*
 #### <a name="user-testing"></a> 8.2.2 User Testing
-  1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
+1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
     - Vague Notification of the creation/run progress
     - Run Inputs was hard to use - Some who were less exposed to JSON needed more time to use it
     - Simple UI
     - Feel that the File Upload option for New Run was unnecessary (Since the file is basically the JSON input)
     - Difficult to understand how to use TooInstance
     - Hassle to view the outputs (eg. Browsing other stuff and wanting traverse back to the specific TI through dashboard, then clicking to finally be able to view the outputs)
-  2. Solutions/Changes
+2. Solutions/Changes
     - Updated our frontend to display more informative status updates (eg. Pushing image to Git...)
     - Made changes to allow for simple CLI inputs as the Run Inputs (eg. --timeout 1 dlwlrma)
       - Our backend will then parse it into Json Format for the user
