@@ -305,8 +305,38 @@ Personally, the command line format would be more easy to use and less time cons
 
 ### <a name="actual-testing"></a> 8.2 Actual Testing
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
-We tested using 2 accounts - themis@example.com and lkldev@outlook.com
+We tested using 2 accounts - themis@example.com (Themis) and lkldev@outlook.com (Dev)
+First, for themis@example.com, we will be creating TooInstances and sharing it with lkldev@outlook.com.
 
+Themis first logs in and is presented with a dashboard containing all Themis's TooInstances(TI).
+
+![Dashboard](https://github.com/lkldev/TooInstance_Public/blob/main/images/dashboard.JPG)
+
+Themis then creates a new TI by clicking on the bottom right "+ Add Tool" button. It then redirects to the Create Tool Page.
+
+![CreateToolPage](https://github.com/lkldev/TooInstance_Public/blob/main/images/createTool.JPG)
+
+Themis then fills in the necessary Tool Information for this TI. Most importantly, Themis made sure to private this TI and shared it only with Dev through the access List before clicking on the "Submit" button.
+
+![filledUpCreatePage](https://github.com/lkldev/TooInstance_Public/blob/main/images/filledInCreate.JPG)
+
+Once it has been submitted, the TI will be created in the backend using AWS technologies. Themis sees the status of the TI updating to provide Themis with more information on its creation. Finally, it returns a "Success" status showing that the TI has been created successfully.
+
+![themisWaiting](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisWaits.JPG)
+
+![themisStatus](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisSeesStatus.JPG)
+
+![themisSuccess](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisSuccess.JPG)
+
+Themis can then start a new run of that TI by clicking on the corresponding "New Run" button. It will be redirected to a New Run Page then request for Input Details from Themis. Themis, being a less technical user (not familiar with JSON formats) and a fan of Iron Man provides TI with the inputs as "--timeout 1 robertdowneyjr" before clicking on the "Submit". Themis can then see the JSON-parsed Inputs as well as the status which updates to provide information on the phase of the TI run. Once, it is finished, the status updates again to become "Success" and a "OUTPUT" button appears which allows Themis to download to view the output of the run.
+
+![themisIronMan](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisIronManRun.JPG)
+
+![themisRunningInstanceUpdate](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisRunningInstanceUpdate.JPG)
+
+![themisRunSuccess](https://github.com/lkldev/TooInstance_Public/blob/main/images/themisRunSuccess.JPG)
+
+![themisOutput](https://github.com/lkldev/TooInstance_Public/blob/main/images/output.JPG)
 
 #### <a name="user-testing"></a> 8.2.2 User Testing
 1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
