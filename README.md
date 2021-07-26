@@ -338,6 +338,18 @@ Themis can then start a new run of that TI by clicking on the corresponding "New
 
 ![themisOutput](https://github.com/lkldev/TooInstance_Public/blob/main/images/output.JPG)
 
+On Dev's end, Dev goes to the "Shared with me" Page through the left Navbar.
+
+![leftNavBar](https://github.com/lkldev/TooInstance_Public/blob/main/images/sharedNavBar.JPG)
+
+Dev is redirected to the "Shared with Me" Page containing Private TIs that has been shared with only Dev. Dev can then use the TI to start a New Run of it.
+
+![sharedWithDev](https://github.com/lkldev/TooInstance_Public/blob/main/images/sharedWithDev.JPG)
+
+Dev being sus of our application, goes to the Public Listing Page to make sure that our application did not accidentally make the TI as public. However, it was indeed private as Dev could not see it in the Public Listing and from there, Dev was relieved. And they lived happily ever after. <FIN>
+
+![publicListingWorking](https://github.com/lkldev/TooInstance_Public/blob/main/images/publicListingWorking.JPG)
+
 #### <a name="user-testing"></a> 8.2.2 User Testing
 1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
     - Vague Notification of the creation/run progress
