@@ -59,7 +59,7 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
 
-**Sample Flow of Application**
+**Simple Flow of Application**
 
 ![Program Flow](https://github.com/lkldev/TooInstance_Public/blob/main/images/flow.jpg)
 
