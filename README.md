@@ -52,6 +52,9 @@ A Web Application hosted on AWS services that automates the creation of the dock
 5. AWS CodeBuild
 6. AWS S3
 7. AWS Lambda
+8. Docker
+  - Dockerized Python
+  - Dockerized Nodejs
 
 
 ## <a name="architecture"></a> 3. Architecture
@@ -231,7 +234,6 @@ Output View Page:
 
 
 ## <a name="testing"></a> 8. Testing
-
 ### <a name="testing-plan"></a> 8.1 Plan for Testing
 #### <u>Plan</u>
 1. Basic Testing with multiple Accounts
@@ -268,23 +270,23 @@ Output View Page:
 #### <a name="bug-testing"></a> 8.2.3 Bug Testing
 Bug #1 - Able to See/Run (Still Creating/Error) TooInstance in Public List
   - Reason was due to lack of checks on whether the status has been "Successful"
-  - Fix - Changes to Backend to not return any TIs that are Successful yet
+  - Fix - *Changes to Backend to not return any TIs that are Successful yet*
 
 Bug #2 - Some Run Inputs not parsed into Json format (in backend)
   - Sample Input - "http://www.google.com" (Includes the quotations)
   - Credits to our Adviser Neil
   - Reason for bug was due to the check whether the input is in JSON format, which went through as True, thus causing the input to be not parsed into JSON format.
-  - Fix - Another layer of checking to verify whether it is in JSON format.
+  - Fix - *Another layer of checking to verify whether it is in JSON format.*
 
 Bug #3 - Server Error when Creating Tool that is Public
   - Server Error - Regarding the variable being referenced before assignment (variable related to Access List value being used to be passed to function)
   - Reason of the Bug/Error was due to mistake of not changing the variable name correctly. (Although, there was no issues on Local Test Environment)
-  - Quick Fix - Change the variable name/Assign it a decoy value
+  - Quick Fix - *Change the variable name/Assign it a decoy value*
 
 Bug #4 - Server Error when Creating Tool that is Private with emails/UIDs provided.
   - Server Error - Policies/Permissions regarding Cognito (AWS) operations
   - Reason was due to lack of permissions/policies to execute the Cognito-related commands (For translating the emails -> to UIDs)
-  - Fix - Give the necessary Cognito Policies to the "instance" of our Application running
+  - Fix - *Give the necessary Cognito Policies to the "instance" of our Application running*
 
 Bug #5 - Neatly formatted version of JSON-provided Run Inputs
   -  Reason was when the Input Parameters are nicely formatted in JSON format, resulting JSON-ed Inputs break/not as expected due to the \r\n being included (other characters incl. \t, \u2003)
