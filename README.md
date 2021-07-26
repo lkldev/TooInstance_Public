@@ -306,7 +306,7 @@ Personally, the command line format would be more easy to use and less time cons
 
 ### <a name="actual-testing"></a> 8.2 Actual Testing
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
-*-to be filled up-*
+
 
 #### <a name="user-testing"></a> 8.2.2 User Testing
 1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
