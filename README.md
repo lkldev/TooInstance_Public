@@ -54,8 +54,8 @@ A Web Application hosted on AWS services that automates the creation of the dock
 6. AWS S3
 7. AWS Lambda
 8. Docker
-  - Dockerized Python
-  - Dockerized Nodejs
+    - Dockerized Python
+    - Dockerized Nodejs
 
 
 ## <a name="architecture"></a> 3. Architecture
@@ -124,7 +124,6 @@ A Web Application hosted on AWS services that automates the creation of the dock
 | \* \* | User | See my past Run History | Easily see my most recent run without going through a long process of traversing to find them |
 | \* \* | User | Reset my password | Change my password if I forgot |
 | \* \* | User | Search for a specific tool instance within the public listing of instances created | Use the instance to test out with my desired inputs |
-| \* | User | Enable 2FA | Prevent my account from being taken over |
 
 
 ## <a name="components"></a>6. Components
@@ -306,6 +305,7 @@ Personally, the command line format would be more easy to use and less time cons
 
 ### <a name="actual-testing"></a> 8.2 Actual Testing
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
+We tested using 2 accounts - themis@example.com and lkldev@outlook.com
 
 
 #### <a name="user-testing"></a> 8.2.2 User Testing
@@ -367,3 +367,7 @@ Bug #8 - AWS IAM extensive permission
 Bug #9 - Docker hub pull limit
   - Docker Hub has a pull limit for public users. Since our project requires the python and nodejs image from docker hub, we faced a pull limit exceeded during one of our testing.
   - Fix - *Pull docker hub images into our private AWS ECR. Our scripts would then pull from our own repository instead.*
+
+Bug #10 - AWS ECS creation
+  - Using AWS web console, the ECS created as intended, however, when we programmatically create the ECS Task, we were faced with numerous errors. We had to break down what the web console did and add the missing steps into our script
+  - Fix - *Add missing AWS components created by the web console abstracted from the user into our script to ensure that the ECS is created smoothly.*
