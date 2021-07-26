@@ -30,7 +30,7 @@ NOTE: **TBD - To Be Done**
 
 *Note - If you have previously created TooInstances with us during Milestone 2, they may be gone as we have done a hard reset of the TooInstances*
 
-![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/poster_mile2.png)
+![Poster](https://github.com/lkldev/TooInstance_Public/blob/main/images/2808.png)
 
 **Motivation**
 
