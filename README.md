@@ -11,6 +11,7 @@
     - [6.2.1. Milestone 1](#mile1)
     - [6.2.2. Milestone 2](#mile2)
     - [6.2.3. Milestone 3](#mile3)
+    - [6.2.4. Future Add-ons](#future)
 - [7. How to Use TooInstance?](#howToUse)
 - [8. Testing](#testing)
   - [8.1. Plan for Testing](#testing-plan)
@@ -230,8 +231,45 @@ Output View Page:
 6. Nodejs RunTime Implementation (*Done*)
     - To allow Running of Nodejs TooInstances
 
-## <a name="howToUse"></a>7. How To Use?
+#### <a name="future"></a> 6.2.3 Future Add-Ons
+1. MFA (Multi-Factor Authentication)
+2. More Runtime Implementations
+3. Github Integration
+4. Capture File Output (now only supports capturing Standard Outputs and returning as a file)
+5. Deleting of TooInstances
+6. Versioning of TooInstances
 
+## <a name="howToUse"></a>7. How To Use?
+<h3 id="howToCreate">How to Create a TooInstance</h5>
+To start off, simply click on the "+ Add Tool" button on the bottom right of your dashboard as shown in the screenshot below.<br><br>
+![createToolScreenshot](https://github.com/lkldev/TooInstance_Public/blob/main/images/createToolScreenshot.JPG)<br><br>
+*Alternatively, you may also use the right navbar to create the tool. You may ignore this step if you are already at the Create Tool Page.<br><br>
+![createToolLeftNavBar](https://github.com/lkldev/TooInstance_Public/blob/main/images/createToolLeftNavBar.JPG")<br><br>
+Now, you should be at the Create Tool Page. Simply fill in the information regarding the tool. First thing would be the Tool(or TI) Name you would like to give it, then gitlink of the tool (eg. https://github.com/sherlock-project/sherlock), Output Type (File Output option to be Implemented), the Runtime (Eg. What language is the tool running?),
+Entry Point - How the tool is usually ran (eg. python script.py, then script.py is your entry point) and then finally, the privacy settings. <br><br>
+![createToolPage](https://github.com/lkldev/TooInstance_Public/blob/main/images/createToolPage.JPG)<br><br>
+If you have decided to make the TooInstance Private, then an Access List should appear for you to provide the emails/UIDs (Only if you know their UID) of those you would like to give access to (will appear under "Shared with Me" on their end). If you do not provide any other user's email/UID, this means it will be available to be ran by you only.<br><br>
+![accessList](https://github.com/lkldev/TooInstance_Public/blob/main/images/accessList.JPG)<br><br>
+Once you are done filling in the relevant informations, simply click submit and it will be sent to our backend to be created. You will then be directed back to your dashboard and you would see its status "pending". The creation time would take about an estimated 5 mins.<br><br>
+<u>Before Created Successfully</u><br><br>
+![creationNotReady](https://github.com/lkldev/TooInstance_Public/blob/main/images/creationNotReady.JPG)<br><br>
+<u>After Created Successfully</u><br><br>
+![creationSuccess](https://github.com/lkldev/TooInstance_Public/blob/main/images/creationSuccess.JPG)
+
+<h3 id="howToCreate">How to Run the TooInstance</h5>
+To start a new Run of the TooInstance, simply click on the "New Run" button corresponding to the desired TooInstance. For the example below, I will be creating a new Run for the TooInstance called "Sherlock 2.0".<br><br>
+![newRunButton](https://github.com/lkldev/TooInstance_Public/blob/main/images/newRunButton.JPG")<br><br>
+Once you have clicked on the "New Run" button, you should be directed to the "Create New Run" Page. Here, you would have to provide us with the command arguments to run the TooInstance. There would be 2 ways of providing this Input Details field, which I would provide examples for below. I will be using the Test case of "python sherlock --timeout 1 google".<br><br>
+<u> Example 1 - By providing simple command line argument format</u> <br><br>
+  Since usual way we run the tool on the command line (console) is "python sherlock --timeout 1 google". Then here, we can simply input "--timeout 1 google" into the <b>Input Details</b> field. An example is shown below.
+![runExample1](https://github.com/lkldev/TooInstance_Public/blob/main/images/runExample1.JPG)<br><br>
+<u> Example 2 - By providing inputs in JSON format</u><br><br>
+For the JSON format, you may format them nicely as shown below.<br><br>
+![runExample2](https://github.com/lkldev/TooInstance_Public/blob/main/images/runExample2Neat.JPG)<br><br>
+Or, you can simply clump them all together as seen below. Either of the 2 JSON formats are accepted.<br><br>
+![runExample2Clump](https://github.com/lkldev/TooInstance_Public/blob/main/images/runExample2Clump.JPG)<br><br>
+Personally, the command line format would be more easy to use and less time consuming. Anyways, after the Run has been created, you would be directed to the "Run Outputs" Page and you would have to wait a while (varies between different Tools - eg. Sherlock without the Timeout Argument provided runs on even after 10-20mins). However, once the Run has completed, you should be able to see an "Output" button which you can download and view the output from the Run.<br><br>
+![runFinished](https://github.com/lkldev/TooInstance_Public/blob/main/images/runFinished.JPG)<br><br>
 
 ## <a name="testing"></a> 8. Testing
 ### <a name="testing-plan"></a> 8.1 Plan for Testing
@@ -249,6 +287,7 @@ Output View Page:
 ### <a name="actual-testing"></a> 8.2 Actual Testing
 #### <a name="basic-testing"></a> 8.2.1 Basic Testing
 *-to be filled up-*
+
 #### <a name="user-testing"></a> 8.2.2 User Testing
 1. TLDR of User Feedbacks (From friends, family, orbital teams and adviser)
     - Vague Notification of the creation/run progress
@@ -290,4 +329,20 @@ Bug #4 - Server Error when Creating Tool that is Private with emails/UIDs provid
 
 Bug #5 - Neatly formatted version of JSON-provided Run Inputs
   -  Reason was when the Input Parameters are nicely formatted in JSON format, resulting JSON-ed Inputs break/not as expected due to the \r\n being included (other characters incl. \t, \u2003)
-  - Fix - Strip out the carriage returns (\r\n), tabs (\t, \u2003 - from the sample JSON format at the left side on the page)
+  - Fix - *Strip out the carriage returns (\r\n), tabs (\t, \u2003 - from the sample JSON format at the left side on the page)*
+
+Bug #6 - Updating of run script
+  - Reason was due to our scripts originally have their code built together into the docker image, which would mean that if we change our script, we will have to rebuild the whole docker image.
+  - To reduce the time it takes to build the docker image, we instead allow our scripts to be pulled from s3 instead. Thus, everytime we run, the docker will pull the latest scripts required.
+
+Bug #7 - Missing packages on Python
+  - Some GitHub repository found online has no requirements.txt, hence the tool will not run
+  - Fix - found a pip package pipreqs  which helps to generate all the required packages the project.
+
+Bug #8 - AWS IAM extensive permission
+  - To ensure the security of our environment, each docker is ran with minimal permission. However, this would occasionally resulted in the program crashing as it does not have the required permissions
+  -  Fix - Ensure that all the permission for basic workflow is granted by performing basic testing
+
+Bug #9 - Docker hub pull limit
+  - Docker Hub has a pull limit for public users. Since our project requires the python and nodejs image from docker hub, we faced a pull limit exceeded during one of our testing.
+  - Fix - Pull docker hub images into our private AWS ECR. Our scripts would then pull from our own repository instead.
