@@ -59,9 +59,30 @@ A Web Application hosted on AWS services that automates the creation of the dock
 
 
 ## <a name="architecture"></a> 3. Architecture
-**Overview of Architecture**
+**Overview of our Architecture**
 
 ![Architecture](https://github.com/lkldev/TooInstance_Public/blob/main/images/TI_Architecture.jpg)
+
+**Details of our Architecture**
+
+Instead of the usual monolithic architecture, we decided to explore creating our project by using the serverless architecture. This would mean we have to take more time into designing our architecture, and the whole project would be more complex. However, having a serverless architecture will be more cost efficient, and our whole project can be turned into microservices, which makes each services independent. This improves our development work, and it makes each services more fault tolerant. If there is a fault in one service, it would not affect the abilities of other services. We would be able to better debug where the error is coming from and fix the issue quickly without affecting other services. Also, should there be an increase in volume traffic, we will be able to scale each services as required, without having to scale the whole project.
+
+Using AWS as our cloud provider, we will be able to cut down a lot of cost by utilizing AWS services such as AWS lambda and AWS Elastic Container Service instead of the usual AWS EC2. Below is the breakdown our architecture:
+
+- Our dashboard is hosted on AWS lambda, and users can reach the dashboard via the Amazon API Gateway. This setup would only incur cost when somebody visits our dashboard, and no cost would be incurred if there are no traffic to the dashboard. The job of the dashboard is to query and update the DynamoDB database, as well as allowing the user to download the output content from their tools.
+
+- By using Amazon Cognito as our authentication service provider, we are able to seamlessly provide access control for each user. This allow us to focus on other areas of the project, instead of developing a secure user authentication system. However, we spent some time improving the wrapper for the service, as the available libraries are not able to handle our requirements (option to add Multi-factor authentication).
+
+- By using Amazon DynamoDB, we are able to take advantage of its DynamoDB streams feature which allow us to trigger the Lambda on new record. Thus, when new records of creation and/or running are added to the DynamoDB, it will trigger our Lambda service to execute it based on the new records.
+
+- Our two main functions of our project is to create and run an instance. We separate each service into an Lambda service, Docker Creation and Run Tool Instance. As mention above, both of these lambda services are triggered by DynamoDB.
+  1. The Docker Creation Lambda would process the record provided by DynamoDB and invoke our create-docker container hosted on AWS Fargate. 
+      - The create-docker container would then pull the repository the user have provided and add the required Dockerfile and scripts into the repository. The updated repository is then pushed into our private GitHub account. The container then creates a new build project on CodeBuild pointing to our GitHub account. 
+        - CodeBuild will then proceed to pull the repository and build the docker image. CodeBuild will update it status to Amazon DynamoDB. Once the docker image have been successfully built, it is stored into our ECR. CodeBuild will register the image with ECS and the image is ready to run.
+  2. The Run Tool Instance would process the record provided by DynamoDB and invoke the correct instance hosted on AWS Fargate with the arguments supplied by the user. The result would then be uploaded to Amazon S3 which the user would be able to download.
+
+With the design of our architecture, should one of our core function fails (Docker Creation stops working), it will not affect the user that are executing their instances that have been created. 
+
 
 **Simple Flow of Application**
 
