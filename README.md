@@ -205,29 +205,29 @@ Output View Page:
 
 
 #### <a name="mile3"></a> 6.2.3 Features Implemented in Milestone 3
-1. Public Listing (*Done*)
+1. Public Listing
     - Display all Non-Private TooInstances
     - Search Filtering by TooInstance Names
 
-2. Shared with Me Functionality (*Done*)
+2. Shared with Me Functionality
     - Displays All Instances that have been Private but whitelisted/allowed to you
     - Backend Processing Changes for Create/Update Page
       - Enable Privacy and Access List
         - Automatically converts valid emails (in Access List) to UIDs on backend
 
-3. *New* Added additional backend Processing for New Run (*Done*)
+3. Added additional backend Processing for New Run
     - Allow users to give simple command line args format instead of just json format (Tough for less technical users)
       - We now also accept eg. -O output.txt -T js,php
       - Afterwards, processed in backend to be converted to json format
 
-4. How To ~Run~ Use Page (*Done*)
+4. How To ~Run~ Use Page
     - Least of Priority in terms of functionality
     - Mainly to boost/help with the user usage on the TooInstance Run
 
-5. *New* Run History (*Done*)
+5. Run History
     - Allows users to view past runs from a history list
 
-6. Nodejs RunTime Implementation (*Done*)
+6. Nodejs RunTime Implementation
     - To allow Running of Nodejs TooInstances
 
 #### <a name="future"></a> 6.2.3 Future Add-Ons
