@@ -352,17 +352,18 @@ Bug #5 - Neatly formatted version of JSON-provided Run Inputs
   - Fix - *Strip out the carriage returns (\r\n), tabs (\t, \u2003 - from the sample JSON format at the left side on the page)*
 
 Bug #6 - Updating of run script
-  - Reason was due to our scripts originally have their code built together into the docker image, which would mean that if we change our script, we will have to rebuild the whole docker image.
-  - To reduce the time it takes to build the docker image, we instead allow our scripts to be pulled from s3 instead. Thus, everytime we run, the docker will pull the latest scripts required.
+  - Reason was due to our scripts originally having their code built together into the docker image, which would mean that if we change our script, we will have to rebuild the whole docker image.
+  - To reduce the time it takes to build the docker image, we instead allow our scripts to be pulled from s3 instead.
+  - Fix - *Everytime we run, the docker will pull the latest scripts required.*
 
 Bug #7 - Missing packages on Python
   - Some GitHub repository found online has no requirements.txt, hence the tool will not run
-  - Fix - found a pip package pipreqs  which helps to generate all the required packages the project.
+  - Fix - *found a pip package pipreqs  which helps to generate all the required packages the project.*
 
 Bug #8 - AWS IAM extensive permission
   - To ensure the security of our environment, each docker is ran with minimal permission. However, this would occasionally resulted in the program crashing as it does not have the required permissions
-  -  Fix - Ensure that all the permission for basic workflow is granted by performing basic testing
+  -  Fix - *Ensure that all the permission for basic workflow is granted by performing basic testing*
 
 Bug #9 - Docker hub pull limit
   - Docker Hub has a pull limit for public users. Since our project requires the python and nodejs image from docker hub, we faced a pull limit exceeded during one of our testing.
-  - Fix - Pull docker hub images into our private AWS ECR. Our scripts would then pull from our own repository instead.
+  - Fix - *Pull docker hub images into our private AWS ECR. Our scripts would then pull from our own repository instead.*
