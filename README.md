@@ -48,14 +48,15 @@ A Web Application hosted on AWS services that automates the creation of the dock
 ## <a name="tech-stack"></a> 2. Tech Stack
 1. Python Flask
 2. AWS DynamoDB
-3. AWS ECS
+3. AWS ECS (Elastic Container Service)
 4. AWS Lambda
 5. AWS CodeBuild
-6. AWS S3
+6. Amazon S3
 7. AWS Lambda
-8. Docker
+8. Amazon API Gateway
+9. Docker
     - Dockerized Python
-    - Dockerized Nodejs
+    - Dockerized NodeJS
 
 
 ## <a name="architecture"></a> 3. Architecture
@@ -71,7 +72,7 @@ Using AWS as our cloud provider, we will be able to cut down a lot of cost by ut
 
 - Our dashboard is hosted on AWS lambda, and users can reach the dashboard via the Amazon API Gateway. This setup would only incur cost when somebody visits our dashboard, and no cost would be incurred if there are no traffic to the dashboard. The job of the dashboard is to query and update the DynamoDB database, as well as allowing the user to download the output content from their tools.
 
-- By using Amazon Cognito as our authentication service provider, we are able to seamlessly provide access control for each user. This allow us to focus on other areas of the project, instead of developing a secure user authentication system. However, we spent some time improving the wrapper for the service, as the available libraries are not able to handle our requirements (option to add Multi-factor authentication).
+- By using Amazon Cognito as our authentication service provider, we are able to seamlessly provide access control for each user. This allow us to focus on other areas of the project, instead of developing a secure user authentication system. However, we spent some time improving the wrapper for the service, as the available libraries are not able to handle our requirements (option to add Multi-factor authentication). Also, it provides secure access to our S3 bucket without making the bucket public to all.
 
 - By using Amazon DynamoDB, we are able to take advantage of its DynamoDB streams feature which allow us to trigger the Lambda on new record. Thus, when new records of creation and/or running are added to the DynamoDB, it will trigger our Lambda service to execute it based on the new records.
 
