@@ -155,12 +155,9 @@ With the design of our architecture, should one of our core function fails (Dock
 - Update TooInstance Page
 - Create New Run Page
   - Backend Processing of inputs, to accept eg. ("-A -O output.txt")
-
 - Output View Page
-- How to Run? Page
-- Shared With Me Page
-  - *Update - Left with the backend logic for the access list to translate email address to UID*
-
+- "How to Use" Page
+- "Shared With Me" Page
 - Public TooInstance Listing Page
 
 Sample Screenshots of our application components.
